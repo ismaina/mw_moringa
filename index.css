@@ -154,18 +154,47 @@ a.saf_logo img {
 
 .column {
     float: left;
-    width: 33.33%;
-    padding: 10px;
+    padding: 20px 40px 20px 40px;
+    position: static;
+    clear: right;
+    margin: 10px;
+    width: 25%;
     margin : 5px;
     height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
+    border-spacing: 20%;
+}
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
 }
+.row {
+    padding: 20px 20px 20px 200px;
+    clear: right;
+    margin: 0px auto 0 auto;
+    
+}
+
+div.row{
+    color: white;
+    font-weight: inherit;
+    font-family:sans-serif;
+    text-align: justify;
+    border: 1px solid #f1f1f1;
+    justify-content: left;
+    position: absolute;
+    transform: translate(10%, 10%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    width: 80%;
+    padding: 20px 60px 20px 60px;
+    z-index: 2;
+    text-align: center;
+    overflow: hidden;
+}
+
 
 .footer ul li a {
     color: white;
@@ -208,7 +237,7 @@ a.saf_logo img {
     display: block;
 }
 
-.bottom{
+.bottom {
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
@@ -230,4 +259,18 @@ a.saf_logo img {
     clear: right;
     margin: 0px;
     width: 25%;
+}
+
+.column_span {
+    color:  #00a84f;
+    border-bottom: 2px solid gray;
+    box-shadow: 2px 1px  #00a84f;
+}
+
+
+div.thumbnail1{
+    background-image: url("https://www.safaricom.co.ke/images/Safaricom_Getting_Started_with_Mpesa.jpg?Lo0P=a6e18cda71042c0dc53b278ae750c060");
+    background-repeat: no-repeat;
+    transform: scale(1);
+    background-size: 100%;
 }
