@@ -1,28 +1,12 @@
-.coupon {
-    border: 5px dotted #bbb; /* Dotted border */
-    width: 80%; 
-    border-radius: 15px; /* Rounded border */
-    margin: 0 auto; /* Center the coupon */
-    max-width: 600px; 
-    
+a:hover { 
+    background-color: #79cf79;
+   
+    text-shadow: 2px 2px #3c3a3a;
 }
-
-div.coupon  img{
-    display: block;
-    width: 20%;
-    height:50px;
-}
-
-.container {
-padding: 2px 16px;
-background-color: #f1f1f1;
-}
-
-.promo {
-background: #ccc;
-padding: 3px;
-}
-
-.expire {
-color: red;
-}
+@media only screen and (max-width : 400px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+  }

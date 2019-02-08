@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family:sans-serif;
+}
+
+div.body {
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    background-color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+.nav {
+    margin-top: 0;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+}
+nav.topnavbar ul li a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav.topnavbar_bottom ul li a {
+    color:  #00a84f;
+    text-align: center;
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+li a {
+    display: block;
+    
+}
+.topnavbar {
+    overflow: hidden;
+    font-size:0.8em;
+    margin-top: 0;
+    background-color: #00a84f;
+}
+
+.topnavbar  ul  li{
+    list-style-type: none;
+    margin:0;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+#topnav_left li {
+    float: left;
+}
+
+#topnav_right li {
+    float: right;
+}
+.topnavbar  li#active, li#active a{
+    background-color: white;
+    color: #00a84f;
+}
+nav.topnavbar_bottom {
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    
+}
+.topnavbar_bottom  ul  li{
+    list-style-type: none;
+    margin:0;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+
+li.top_Search_li {
+    box-sizing: border-box;
+    outline: none;
+    color: aqua;
+    border: 0.5px solid rgb(176, 175, 175);
+    border-style: groove;
+    border-radius: 20px;
+ 
+}
+
+#top_search_bar {
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    height: auto;
+    background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;); 
+    size: 12px;
+    resize: 30%;
+    margin: 0px ;
+    text-indent: 48px;
+    text-align: right;
+    outline: none;
+}
+
+
+.top_Search_li input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+a.saf_logo img {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 70%;
+    margin : 0px;
+}
+
+.topnavbar_bottom ul#topnav_left li:first-child {
+    size: 30%;
+    position: relative;
+    padding: 0px 0px 0px 30px;
+    margin: 0px;
+}
+.topnavbar_bottom {
+    border-bottom: 2px solid gainsboro;
+    box-shadow: 2px 5px black;
+}
+.parallax {
+    /* The image used */
+    background-image: url(https://www.safaricom.co.ke/Corporate-Image-homepage.jpg?Lo0P=713f351b2b478f0fe420a77c439f3973&quot;);
+    height: 943px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-image {
+    /* Full height */
+    height: 50%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.img1 { background-image: url("https://www.safaricom.co.ke/blog/wp-content/uploads/2015/09/Blog-Banner.jpg"); }
+.img2 { background-image: url("https://www.safaricom.co.ke/blog/wp-content/uploads/2016/04/bake_awards.jpg"); }
+.img3 { background-image: url("https://www.safaricom.co.ke/blog/wp-content/uploads/2015/12/app_image.jpg"); }
+.img4 { background-image: url("http://mutuamatheka.co.ke/wp-content/uploads/2012/04/001_NAIROBI_WEBREADY_MUTUA-MATHEKA-11.jpg"); filter: blur(8px); }
+
+
+
+.column {
+    float: left;
+    padding: 20px 40px 20px 40px;
+    position: static;
+    clear: right;
+    margin: 10px;
+    width: 25%;
+    margin : 5px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border-spacing: 20%;
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    padding: 20px 20px 20px 200px;
+    clear: right;
+    margin: 0px auto 0 auto;
+    
+}
+
+div.row{
+    color: white;
+    font-weight: inherit;
+    font-family:sans-serif;
+    text-align: justify;
+    border: 1px solid #f1f1f1;
+    justify-content: left;
+    position: absolute;
+    transform: translate(10%, 10%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    width: 80%;
+    padding: 20px 60px 20px 60px;
+    z-index: 2;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.footer ul li a {
+    color: white;
+}
+
+.top {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.top ul {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 4px;
+    text-decoration: none;
+    font-size: 14px;
+    list-style: none;
+}
+.top ul li , .bottom ul li {
+    display: inline;
+    color: #f2f2f2;
+    list-style: none;
+    text-align: left;
+}
+.top ul li h2 {
+    float: left;
+    position: sticky;
+    padding-top: -40px;
+}
+
+.bottom ul {
+    display: inline;
+}
+
+.bottom ul li {
+    text-align: center;
+    color: white;
+    display: block;
+}
+
+.bottom {
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    transform: translate(10%, 10%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    width: 80%;
+    padding: 20px 60px 20px 60px;
+    z-index: 2;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer_f {
+    float: left;
+    padding: 20px 40px 20px 40px;
+    position: relative;
+    clear: right;
+    margin: 0px;
+    width: 25%;
+}
+
+.column_span {
+    color:  #00a84f;
+    border-bottom: 2px solid gray;
+    box-shadow: 2px 1px  #00a84f;
+}
+
+
+div.thumbnail1{
+    background-image: url("https://www.safaricom.co.ke/images/Safaricom_Getting_Started_with_Mpesa.jpg?Lo0P=a6e18cda71042c0dc53b278ae750c060");
+    background-repeat: no-repeat;
+    transform: scale(1);
+    background-size: 100%;
+}
+div.thumbnail2{
+    background-image: url("https://www.safaricom.co.ke/images/Lipa_na_Mpesa.jpg?Lo0P=0ebc7e75f3a913111e49a180822a1018");
+    background-repeat: no-repeat;
+    transform: scale(1);
+    background-size: 100%;
+}
+div.thumbnail3{
+    background-image: url("https://www.safaricom.co.ke/images/Swift_Squad.jpg?Lo0P=af99a67a5d035dbae00308bb6f505181");
+    background-repeat: no-repeat;
+    transform: scale(1);
+    background-size: 100%;
+}
+div.thumbnail4{
+    background-image: url("https://www.safaricom.co.ke/images/Web_Banner_S9.png?Lo0P=f5a3be294530b255805703170a942a0d");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    
+}
+div.thumbnail5{
+    background-image: url("https://www.safaricom.co.ke/images/note8_banner.png?Lo0P=6c393ab14f59e6a84d8fb9f9764716e3");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    
+}
+div.thumbnail6{
+    background-image: url("https://www.safaricom.co.ke/images/Web_Banner_IphoneX.PNG?Lo0P=be1215de91df1af8ac33363fc5079b11");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    
+}
+
