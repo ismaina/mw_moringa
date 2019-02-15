@@ -1,21 +1,23 @@
 try {
-node {
-    def app
+    node {
+        def app
 
-    stage('Clone Repository')
-    {
-        checkout scm
+        stage('Clone Repository')
+        {
+            checkout scm
+        }
+
+        stage('Show me the files') {
+
+            sh "ls -l"
+        
+        }
+        stage('Apply changes to the environment') {
+            sh " ls -l"
+            sh "php -S localhost:5068"
+        }
+
     }
-
-    stage('Show me the files') {
-
-        sh "ls -l"	
-       
-    }
-
-
-
-}
 } catch(Error|Exception e) {
   //Finish failing the build after telling someone about it
   throw e
