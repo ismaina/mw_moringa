@@ -8,13 +8,25 @@ try {
         }
 
         stage('Show me the files') {
-
+            
+            sh "pwd"
             sh "ls -l"
         
         }
         stage('Apply changes to the environment') {
             sh " ls -l"
             sh "php -S localhost:5068"
+        }
+        stage('Build docker image') {
+            sh "docker build -t mwanjau_moringa:latest ."
+        }
+        stage('Docker login to hub and push the image') {
+            sh " docker login -u 'mwanjau' -p 'mwanjau@123' "
+            sh "docker tag mwanjau_moringa:latest mwanjau/mwanjau_moringa:latest"
+            sh "docker push mwanjau/mwanjau_moringa:latest"
+        }
+        stage('Apply changes to the environment'){
+            sh "ls -l"
         }
 
     }
