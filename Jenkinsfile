@@ -15,7 +15,6 @@ try {
         }
         stage('Apply changes to the environment') {
             sh " ls -l"
-            sh "php -S localhost:5068"
         }
         stage('Build docker image') {
             sh "docker build -t mwanjau_moringa:latest ."
