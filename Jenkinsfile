@@ -14,16 +14,30 @@ try {
         
         }
         stage('Build docker image') {
-            sh "docker build -t mwanjau_moringa:latest ."
+            sh "docker build -t mwanjau_jenkins_csi:v1 ."
         }
         stage('Docker login to hub and push the image') {
             sh "docker login -u 'mwanjau' -p 'mwanjau@123' "
-            sh "docker tag mwanjau_moringa:latest mwanjau/mwanjau_moringa:latest"
-            sh "docker push mwanjau/mwanjau_moringa:latest"
+            sh "docker tag mwanjau_jenkins_csi:v1 mwanjau/mwanjau_jenkins_csi:v1"
+            sh "docker push mwanjau/mwanjau_jenkins_csi:v1"
         }
         stage('Apply changes to the environment'){
             sh "ls -l"
         }
+        stage('Check the docker image'){
+            sh "docker image ls"
+        }
+        stage('Apply changes to the environment'){
+            sh "ls -l"
+        }
+        stage('Run the docker image'){
+            sh "docker container run -d mwanjau/mwanjau_devops_exam:latest"
+        }
+
+        stage('Check if docker container is running'){
+            sh "docker ps -a"
+        }
+
 
     }
 } catch(Error|Exception e) {
