@@ -14,12 +14,12 @@ try {
         
         }
         stage('Build docker image') {
-            sh "docker build -t mwanjau_jenkins_csi:v2 ."
+            sh "docker build -t mw_jenkins_web_hook_triger ."
         }
         stage('Docker login to hub and push the image') {
             sh "docker login -u 'mwanjau' -p 'mwanjau@123' "
-            sh "docker tag mwanjau_jenkins_csi:v2 mwanjau/mwanjau_jenkins_csi:v2"
-            sh "docker push mwanjau/mwanjau_jenkins_csi:v2"
+            sh "docker tag mw_jenkins_web_hook_triger mwanjau/mw_jenkins_web_hook_triger"
+            sh "docker push mwanjau/mw_jenkins_web_hook_triger"
         }
         stage('Apply changes to the environment'){
             sh "ls -l"
@@ -31,7 +31,7 @@ try {
             sh "ls -l"
         }
         stage('Run the docker image'){
-            sh "docker container run -d mwanjau/mwanjau_devops_exam:latest"
+            sh "docker container run -d mwanjau/mw_jenkins_web_hook_triger"
         }
 
         stage('Check if docker container is running'){
