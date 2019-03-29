@@ -14,12 +14,12 @@ try {
         
         }
         stage('Build docker image') {
-            sh "docker build -t mwanjau_jenkins_csi:v1 ."
+            sh "docker build -t mwanjau_jenkins_csi:v2 ."
         }
         stage('Docker login to hub and push the image') {
             sh "docker login -u 'mwanjau' -p 'mwanjau@123' "
-            sh "docker tag mwanjau_jenkins_csi:v1 mwanjau/mwanjau_jenkins_csi:v1"
-            sh "docker push mwanjau/mwanjau_jenkins_csi:v1"
+            sh "docker tag mwanjau_jenkins_csi:v2 mwanjau/mwanjau_jenkins_csi:v2"
+            sh "docker push mwanjau/mwanjau_jenkins_csi:v2"
         }
         stage('Apply changes to the environment'){
             sh "ls -l"
