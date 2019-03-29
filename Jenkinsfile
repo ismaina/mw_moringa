@@ -31,7 +31,7 @@ try {
             sh "ls -l"
         }
         stage('Run the docker image'){
-            sh "docker container run -d mwanjau/mw_jenkins_web_hook_triger"
+            sh "docker container run -d -p 8081: mwanjau/mw_jenkins_web_hook_triger"
         }
 
         stage('Check if docker container is running'){
