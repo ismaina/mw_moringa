@@ -30,7 +30,7 @@ try {
         stage('Apply changes to the environment'){
             sh "ls -l"
         }
-        stage('Run the docker image'){
+        stage('Run the docker image locally'){
             sh "docker container run -d -p 8000:80 mwanjau/mw_jenkins_web_hook_triger"
         }
 
